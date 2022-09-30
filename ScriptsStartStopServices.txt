@@ -1,0 +1,37 @@
+Stop-Service -Name LOSWatchDog
+Stop-Service -Name LOPAMS
+Stop-Service -Name LOPAEvents
+Stop-Service -Name LOPAEventTasks
+Stop-Service -Name LOPAASyncTasks
+Stop-Service -Name "Life Office Messaging NestingDolls"
+Stop-Service -Name "Life Office FA Schedules"
+Stop-Service -Name "Life Office FA AsyncTask"
+Stop-Service -Name LODWMS
+Stop-Service -Name LODocGenAsyncTasks
+Stop-Service -Name LODABuffer
+Stop-Service -Name LODAASyncTasks
+Stop-Service -Name LOCleaner
+Stop-Service -Name LOBPAScheduler
+Stop-Service -Name LOBPAAsyncTasks
+Stop-Service -Name PAVaultAsyncTasks
+
+iisreset /STOP
+
+Start-Service -Name LOSWatchDog
+Start-Service -Name LOPAMS
+Start-Service -Name LOPAEvents
+Start-Service -Name LOPAEventTasks
+Start-Service -Name LOPAASyncTasks
+Start-Service -Name "Life Office Messaging NestingDolls"
+Start-Service -Name "Life Office FA Schedules"
+Start-Service -Name "Life Office FA AsyncTask"
+Start-Service -Name LODWMS
+Start-Service -Name LODocGenAsyncTasks
+Start-Service -Name LODABuffer
+Start-Service -Name LODAASyncTasks
+Start-Service -Name LOCleaner
+Start-Service -Name LOBPAScheduler
+Start-Service -Name LOBPAAsyncTasks
+Start-Service -Name PAVaultAsyncTasks
+
+iisreset /START
